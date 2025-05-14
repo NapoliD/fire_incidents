@@ -35,10 +35,12 @@ This repository provides a complete ETL solution to ingest, transform, and valid
 ## Project Structure
 
 ```plaintext
-├── database_schema.py        # Schema definition for Data Warehouse
-├── etl_fire.py              # ETL script with CSV path prompt
-├── etl_fire_estable.py      # ETL script without prompt (stable)
-├── report.py                # Validation report generator
+
+├── etl
+  ── etl_fire.py              # ETL script with CSV path prompt
+  ── etl_fire_estable.py      # ETL script without prompt (stable)
+  ── report.py                # Validation report generator
+  ── database_schema.py        # Schema definition for Data Warehouse
 ├── docker-compose.yml       # Local PostgreSQL setup via Docker
 ├── dags/
 │   └── fire_etl_dag.py      # Airflow DAG for future orchestration
